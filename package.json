@@ -8,7 +8,7 @@
     "gitlab",
     "git"
   ],
-  "repository": "https://github.com/blakawk/gitlab-integration",
+  "repository": "https://github.com/harse/gitlab-integration",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
