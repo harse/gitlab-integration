@@ -102,6 +102,10 @@ class GitlabIntegration
                     host = "#{url.resource}:#{url.port}"
                 else
                     host = url.resource
+
+                if not atom.config.get('gitlab-integration.remoteUrl')
+                    host = atom.config.get('gitlab-integration.remoteUrl')
+
                 @gitlab.watch(host, projectName, repos)
                 if setCurrent?
                     @statusBarView.onProjectChange(projectName)
