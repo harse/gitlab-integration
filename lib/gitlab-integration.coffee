@@ -103,8 +103,11 @@ class GitlabIntegration
                 else
                     host = url.resource
 
-                if not atom.config.get('gitlab-integration.remoteUrl')
+                if atom.config.get('gitlab-integration.remoteUrl') != ""
                     host = atom.config.get('gitlab-integration.remoteUrl')
+                    log "     - change host to:", host
+                else
+                    log "     - host:", host
 
                 @gitlab.watch(host, projectName, repos)
                 if setCurrent?
