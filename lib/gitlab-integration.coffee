@@ -18,6 +18,11 @@ class GitlabIntegration
             minimum: 1000
             default: 5000
             type: 'integer'
+        remoteUrl:
+            title: 'Gitlab remote URL'
+            description: 'URL to access your Gitlab'
+            type: 'string'
+            default: ''
         unsecureSsl:
             title: 'Disable SSL certificate check'
             description: 'In case your Gitlab server is using a self-signed certificate, enable this option to allow plugin to work'
