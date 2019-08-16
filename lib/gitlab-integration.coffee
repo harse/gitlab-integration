@@ -19,8 +19,8 @@ class GitlabIntegration
             default: 5000
             type: 'integer'
         remoteUrl:
-            title: 'Gitlab remote URL'
-            description: 'URL to access your Gitlab'
+            title: 'Gitlab API remote URL'
+            description: 'URL to access your Gitlab API'
             type: 'string'
             default: ''
         unsecureSsl:
